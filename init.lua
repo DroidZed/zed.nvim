@@ -224,7 +224,7 @@ vim.opt.rtp:prepend(lazypath)
 --
 --  To update plugins you can run
 --    :Lazy update
---
+vim.opt.conceallevel = 1
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
@@ -235,7 +235,21 @@ require('lazy').setup({
   --
   -- Use `opts = {}` to force a plugin to be loaded.
   --
+  { 'hrsh7th/nvim-cmp', opts = {} },
+  { 'nvim-tree/nvim-tree.lua', opts = {} },
+  { 'nvim-tree/nvim-web-devicons', opts = {} },
+  {
+    'epwalsh/obsidian.nvim',
+    opts = {
 
+      workspaces = {
+        {
+          name = 'main',
+          path = "~/Documents/droid's vault",
+        },
+      },
+    },
+  },
   { 'andweeb/presence.nvim', opts = {} },
   {
     'iamcco/markdown-preview.nvim',
@@ -630,13 +644,10 @@ require('lazy').setup({
         pyright = {},
         html = {},
         cssls = {},
-        kotlin_language_server = {},
-        java_language_server = {},
-        -- jinja_lsp = {},
         jsonls = {},
         sqlls = {},
         -- pyright = {},
-        -- rust_analyzer = {},
+        rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -645,7 +656,7 @@ require('lazy').setup({
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         ts_ls = {},
         --
-
+        intelephense = {},
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
