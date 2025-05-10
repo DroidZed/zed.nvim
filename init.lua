@@ -236,29 +236,10 @@ require('lazy').setup({
   -- Use `opts = {}` to force a plugin to be loaded.
   --
   { 'hrsh7th/nvim-cmp', opts = {} },
-  { 'nvim-tree/nvim-tree.lua', opts = {} },
-  { 'nvim-tree/nvim-web-devicons', opts = {} },
   {
-    'epwalsh/obsidian.nvim',
-    opts = {
-
-      workspaces = {
-        {
-          name = 'main',
-          path = "~/Documents/droid's vault",
-        },
-      },
-    },
-  },
-  { 'andweeb/presence.nvim', opts = {} },
-  {
-    'iamcco/markdown-preview.nvim',
-    cmd = { 'MarkdownPreviewToggle', 'MarkdownPreview', 'MarkdownPreviewStop' },
-    build = 'cd app && yarn install',
-    init = function()
-      vim.g.mkdp_filetypes = { 'markdown' }
-    end,
-    ft = { 'markdown' },
+    'vyfor/cord.nvim',
+    build = ':Cord update',
+     -- opts = {}
   },
   -- Here is a more advanced example where we pass configuration
   -- options to `gitsigns.nvim`. This is equivalent to the following Lua:
