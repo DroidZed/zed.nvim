@@ -56,6 +56,17 @@ require('lazy').setup({
   require 'kickstart.plugins.lint',
   require 'kickstart.plugins.autopairs',
   require 'kickstart.plugins.neo-tree',
+
+  -- NOTE: Added plugins !
+  {
+    'jake-stewart/multicursor.nvim',
+    opts = {},
+  },
+  {
+    'vyfor/cord.nvim',
+    build = ':Cord update',
+    -- opts = {}
+  },
   {
     'xiyaowong/transparent.nvim',
     opts = {
