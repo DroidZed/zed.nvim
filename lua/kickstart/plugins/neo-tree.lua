@@ -8,6 +8,9 @@ return {
     'nvim-lua/plenary.nvim',
     'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
     'MunifTanjim/nui.nvim',
+    'antosha417/nvim-lsp-file-operations',
+    'folke/snacks.nvim',
+    's1n7ax/nvim-window-picker',
   },
   lazy = false,
   keys = {
@@ -23,13 +26,13 @@ return {
         symbols = {
           -- Change type
           added = '✚', -- or "✚"
-          modified = '', -- or ""
+          modified = '', -- or ""
           deleted = '✖', -- this can only be used in the git_status source
           renamed = '󰁕', -- this can only be used in the git_status source
           -- Status type
           untracked = '',
           ignored = '',
-          unstaged = '',
+          unstaged = '',
           staged = '',
           conflict = '',
         },
