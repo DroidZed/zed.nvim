@@ -3,17 +3,8 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-  -- For `plugins.lua` users.
-  {
-    'OXY2DEV/markview.nvim',
-    lazy = false,
-
-    -- For `nvim-treesitter` users.
-    priority = 49,
-
-    -- For blink.cmp's completion
-    dependencies = {
-      'saghen/blink.cmp',
-    },
-  },
+  require 'custom.plugins.markerview',
+  require 'custom.plugins.multicursor',
+  require 'custom.plugins.cord',
+  require 'custom.plugins.transparent',
 }
