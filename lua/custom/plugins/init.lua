@@ -4,7 +4,6 @@
 -- See the kickstart.nvim README for more information
 return {
   require 'custom.plugins.markerview',
-  require 'custom.plugins.multicursor',
   require 'custom.plugins.cord',
   require 'custom.plugins.spellcheck',
   require 'custom.plugins.transparent',
