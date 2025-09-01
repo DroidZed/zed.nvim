@@ -2,9 +2,4 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-return {
-  require 'custom.plugins.markerview',
-  require 'custom.plugins.cord',
-  require 'custom.plugins.spellcheck',
-  require 'custom.plugins.transparent',
-}
+return {}
